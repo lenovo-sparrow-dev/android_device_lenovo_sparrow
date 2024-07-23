@@ -37,7 +37,7 @@ TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a53
 
 # Asserts
-TARGET_OTA_ASSERT_DEVICE := sparrow
+TARGET_OTA_ASSERT_DEVICE := sparrow,msm8953_64
 
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "qualcomm-uart"
