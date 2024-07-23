@@ -275,4 +275,4 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/qca_cld/WCNSS_qcom_cfg.ini
 
 # Call the proprietary setup
-$(call inherit-product, vendor/lenovo/starfire/starfire-vendor.mk)
+$(call inherit-product, vendor/lenovo/sparrow/sparrow-vendor.mk)

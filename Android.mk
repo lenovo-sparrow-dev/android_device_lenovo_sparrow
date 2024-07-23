@@ -23,7 +23,7 @@
 # *not* include it on all devices, so it is safe even with hardware-specific
 # components.
 
-ifeq ($(TARGET_DEVICE),starfire)
+ifeq ($(TARGET_DEVICE),sparrow)
 
 include $(call all-subdir-makefiles)
 

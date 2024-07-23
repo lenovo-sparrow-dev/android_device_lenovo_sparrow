@@ -15,33 +15,33 @@
 #
 
 # Boot animation
-TARGET_SCREEN_HEIGHT := 1080
-TARGET_SCREEN_WIDTH := 1920
+TARGET_SCREEN_HEIGHT := 800
+TARGET_SCREEN_WIDTH := 1280
 
-$(call inherit-product, $(SRC_TARGET_DIR)/product/core_base.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
-$(call inherit-product, device/lenovo/starfire/verity.mk)
+$(call inherit-product, device/lenovo/sparrow/verity.mk)
 
 # Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/lenovo/starfire/device.mk)
+$(call inherit-product, device/lenovo/sparrow/device.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_NAME := lineage_starfire
-PRODUCT_DEVICE := starfire
+PRODUCT_NAME := lineage_sparrow
+PRODUCT_DEVICE := sparrow
 PRODUCT_BRAND := Lenovo
-PRODUCT_MODEL := Lenovo StarView
+PRODUCT_MODEL := Lenovo SD-X701B
 PRODUCT_MANUFACTURER := Lenovo
 
 PRODUCT_GMS_CLIENTID_BASE := android-lenovo
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="CD-18781Y-user 8.1.0 OPM1.171019.026 LenovoCD-18781Y-ZR-202106021417 release-keys" \
-    TARGET_DEVICE="starfire"
+    PRIVATE_BUILD_DESC="msm8953_64-userdebug 8.1.0 OPM1.171019.011 SPARROWPR test-keys" \
+    TARGET_DEVICE="msm8953_64"
 
-BUILD_FINGERPRINT := Lenovo/CD-18781Y/CD-18781Y:8.1.0/OPM1.171019.026/penghu06021417:user/release-keys
+BUILD_FINGERPRINT := Android/msm8953_64/msm8953_64:8.1.0/OPM1.171019.011/SPARROWPR:userdebug/test-keys

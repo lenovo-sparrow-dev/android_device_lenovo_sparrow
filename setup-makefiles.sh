@@ -18,7 +18,7 @@
 
 set -e
 
-DEVICE=starfire
+DEVICE=sparrow
 VENDOR=lenovo
 
 INITIAL_COPYRIGHT_YEAR=2017

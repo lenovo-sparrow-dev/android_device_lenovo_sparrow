@@ -18,7 +18,7 @@
 
 set -e
 
-DEVICE=starfire
+DEVICE=sparrow
 VENDOR=lenovo
 
 # Load extract_utils and do some sanity checks
