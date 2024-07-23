@@ -278,5 +278,13 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
     $(LOCAL_PATH)/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/qca_cld/WCNSS_qcom_cfg.ini
 
+# Bluetooth
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/bluetooth/btfwnpla.tlv:$(TARGET_OUT_SYSTEM_ETC)/firmware/btfwnpla.tlv \
+    $(LOCAL_PATH)/bluetooth/btnvnpla.bin:$(TARGET_OUT_SYSTEM_ETC)/firmware/btnvnpla.bin \
+    $(LOCAL_PATH)/bluetooth/ice40.bin:$(TARGET_OUT_SYSTEM_ETC)/firmware/ice40.bin \
+    $(LOCAL_PATH)/bluetooth/nvm_tlv_uart_npl_1.0.bin:$(TARGET_OUT_SYSTEM_ETC)/firmware/nvm_tlv_uart_npl_1.0.bin \
+    $(LOCAL_PATH)/bluetooth/rampatch_tlv_uart_npl_1.0.tlv:$(TARGET_OUT_SYSTEM_ETC)/firmware/rampatch_tlv_uart_npl_1.0.tlv
+
 # Call the proprietary setup
 $(call inherit-product, vendor/lenovo/sparrow/sparrow-vendor.mk)
