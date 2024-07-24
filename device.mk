@@ -280,11 +280,11 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/bluetooth/btfwnpla.tlv:$(TARGET_OUT_SYSTEM_ETC)/firmware/btfwnpla.tlv \
-    $(LOCAL_PATH)/bluetooth/btnvnpla.bin:$(TARGET_OUT_SYSTEM_ETC)/firmware/btnvnpla.bin \
-    $(LOCAL_PATH)/bluetooth/ice40.bin:$(TARGET_OUT_SYSTEM_ETC)/firmware/ice40.bin \
-    $(LOCAL_PATH)/bluetooth/nvm_tlv_uart_npl_1.0.bin:$(TARGET_OUT_SYSTEM_ETC)/firmware/nvm_tlv_uart_npl_1.0.bin \
-    $(LOCAL_PATH)/bluetooth/rampatch_tlv_uart_npl_1.0.tlv:$(TARGET_OUT_SYSTEM_ETC)/firmware/rampatch_tlv_uart_npl_1.0.tlv
+    $(LOCAL_PATH)/bluetooth/btfwnpla.tlv:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/btfwnpla.tlv \
+    $(LOCAL_PATH)/bluetooth/btnvnpla.bin:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/btnvnpla.bin \
+    $(LOCAL_PATH)/bluetooth/ice40.bin:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/ice40.bin \
+    $(LOCAL_PATH)/bluetooth/nvm_tlv_uart_npl_1.0.bin:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/nvm_tlv_uart_npl_1.0.bin \
+    $(LOCAL_PATH)/bluetooth/rampatch_tlv_uart_npl_1.0.tlv:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/rampatch_tlv_uart_npl_1.0.tlv
 
 # Call the proprietary setup
 $(call inherit-product, vendor/lenovo/sparrow/sparrow-vendor.mk)
