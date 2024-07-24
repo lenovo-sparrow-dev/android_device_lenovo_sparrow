@@ -115,7 +115,7 @@ vendor/lib/libchromatix_ov5693_video_full.so
 vendor/lib/libchromatix_ov5693_a3_zsl_preview.so
 vendor/lib/libchromatix_ov5693_a3_zsl_video.so
 vendor/lib/libchromatix_ov5693_a3_default_preview.so
-vendor/lib/libchromatix_ov5693_a3_default_video.soundfx
+vendor/lib/libchromatix_ov5693_a3_default_video.so
 
 # Camera-Configs
 vendor/etc/camera/camera_config.xml
